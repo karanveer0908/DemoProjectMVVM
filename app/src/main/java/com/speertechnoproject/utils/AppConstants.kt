@@ -8,7 +8,7 @@ package com.speertechnoproject.utils
      const val BASE_URL = "https://api.github.com/"
 
      //headers
-     const val HEADERAUTHSTRING = "Authorization: token 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"
+     const val HEADERAUTHSTRING = "Authorization: token "
 
      //api names
      const val SEARCHUSERAPI ="search/users"
