@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">SpeerTechnoProject</string>
+    <string name="followers">followers</string>
+    <string name="following">following</string>
+</resources>
