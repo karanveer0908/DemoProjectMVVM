@@ -18,6 +18,28 @@ private val layoutResId: Int) : AppCompatActivity() {
 
 
     }
+    fun groupDevices(inputs:List<String>): String{
+
+
+        val map = hashMapOf<String,String>()
+
+        for (data in inputs){
+            val splitData = data.split(":")
+
+            if(map.containsKey(splitData[1])){
+                map[splitData[1]]= map[splitData[1]]+"," + splitData[0]
+
+            } else {
+                map[splitData[1]]= splitData[0]
+            }
+        }
+
+        val builder = StringBuilder()
+        for (key in map.keys){
+            builder.appendLine("$key:${map[key]}")
+        }
+        return builder.toString()
+    }
 
     abstract fun initComponents(savedInstanceState: Bundle?, binding: VDB)
 
